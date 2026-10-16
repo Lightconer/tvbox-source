@@ -41,14 +41,36 @@ def log(msg):
     print(f"[{datetime.now(timezone.utc).isoformat()}] {msg}", flush=True)
 
 
+def strip_jsonc_comments(text):
+    """去掉 JSONC 风格注释（/* */ 块注释 + 整行 // 注释）。
+
+    仅移除整行开头的 // 注释，避免误删 https:// 等 URL 内部的 //。
+    """
+    text = re.sub(r"/\*.*?\*/", "", text, flags=re.S)
+    lines = []
+    for line in text.splitlines():
+        if line.lstrip().startswith("//"):
+            continue
+        lines.append(line)
+    return "\n".join(lines)
+
+
+def parse_json_text(raw_text):
+    """解析配置文本；遇到严格 JSON 解析失败时降级为 JSONC（去注释）解析。"""
+    try:
+        return json.loads(raw_text)
+    except json.JSONDecodeError:
+        return json.loads(strip_jsonc_comments(raw_text))
+
+
 def fetch_json(url, timeout):
-    """拉取一个上游地址并解析为 JSON，容忍 BOM。"""
+    """拉取一个上游地址并解析为 JSON，容忍 BOM 与 //、/* */ 注释。"""
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
     with urllib.request.urlopen(req, timeout=timeout) as resp:
         raw = resp.read()
     if raw.startswith(b"\xef\xbb\xbf"):
         raw = raw[3:]
-    return json.loads(raw.decode("utf-8", "ignore"))
+    return parse_json_text(raw.decode("utf-8", "ignore"))
 
 
 def normalize_key(value):
