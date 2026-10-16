@@ -1,17 +1,21 @@
 # ============================================================
 # 单仓源 上游地址列表
 #
-# 每行一个上游源地址（TVBox 兼容配置 JSON 或轻量源的 URL）。
+# 每行一个上游源地址（TVBox 兼容配置 JSON / 轻量源 / JSONC 的 URL）。
 # 以 # 开头的行为注释，空行也会被忽略。
 #
-# 把你想要聚合的成熟源的原始地址填到下面。每次自动更新时，脚本会
-# 逐个拉取、合并、去重，并写入 tvbox.json。
-#
-# 建议：
-#   - 优先使用 raw.githubusercontent.com 或稳定 CDN 的直链；
-#   - 数量不必贪多，质量优先；失效地址会被脚本记录，但不会被加入源。
+# 每次自动更新时，脚本会逐个拉取、合并、去重，并写入 tvbox.json。
+# 以下 4 个均为公开、长期维护、托管在 GitHub raw 的源（Actions 可稳定访问）。
 # ============================================================
 
-# 示例（删掉 # 并替换为真实地址即可生效）：
-# https://raw.githubusercontent.com/Example/box/main/tvbox.json
-# https://example.com/api.php/provide/config
+# 经典长维护源：XYQTVBox（站点丰富，含 // 注释，脚本已兼容 JSONC）
+https://raw.githubusercontent.com/qirenzhidao/tvbox18/main/XYQTVBox/XYQTVBox.json
+
+# 经典长维护源：XYQOnlineRule（站点 + 解析 + 直播 + 规则）
+https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json
+
+# 懒猫/肥猫系 TVSpider（解析 + 直播 + 规则）
+https://raw.githubusercontent.com/jadehh/TVSpider/main/json/TVBox.json
+
+# jiusanzhou/tvbox 自动生成源（8 个站点 + 解析 + 直播，结构干净）
+https://raw.githubusercontent.com/jiusanzhou/tvbox/main/tvbox.json
