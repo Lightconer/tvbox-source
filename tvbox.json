@@ -194,7 +194,7 @@
       "key": "aiyifan_api",
       "name": "🌏 爱壹帆 (海外)",
       "type": 3,
-      "api": "https://zoe.im/tvbox/sites/aiyifan/spider.js?v=f5a26a1a&t=1793095573891",
+      "api": "https://zoe.im/tvbox/sites/aiyifan/spider.js?v=f5a26a1a&t=1793184764714",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -220,7 +220,7 @@
       "key": "ddys",
       "name": "🎞 低端影视",
       "type": 3,
-      "api": "https://zoe.im/tvbox/sites/ddys/spider.js?v=6e848abf&t=1793095573892",
+      "api": "https://zoe.im/tvbox/sites/ddys/spider.js?v=6e848abf&t=1793184764715",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -1459,7 +1459,7 @@
       }
     }
   ],
-  "last_updated": "2026-10-28T04:32:58.796070+00:00",
+  "last_updated": "2026-10-28T12:18:24.804741+00:00",
   "upstream_count": 4,
   "source_count": 144
 }
