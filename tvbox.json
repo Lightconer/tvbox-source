@@ -1285,6 +1285,16 @@
       }
     },
     {
+      "name": "Json并发",
+      "type": 2,
+      "url": "Parallel"
+    },
+    {
+      "name": "Json轮询",
+      "type": 2,
+      "url": "Sequence"
+    },
+    {
       "name": "聚合",
       "type": 3,
       "url": "Demo"
@@ -1364,16 +1374,6 @@
       "name": "线路10",
       "type": 0,
       "url": "https://www.ckplayer.vip/jiexi/?url="
-    },
-    {
-      "name": "Json并发",
-      "type": 2,
-      "url": "Parallel"
-    },
-    {
-      "name": "Json轮询",
-      "type": 2,
-      "url": "Sequence"
     },
     {
       "name": "-咸鱼-",
@@ -1459,7 +1459,7 @@
       }
     }
   ],
-  "last_updated": "2026-10-27T21:54:57.755130+00:00",
+  "last_updated": "2026-10-28T04:32:58.796070+00:00",
   "upstream_count": 4,
   "source_count": 144
 }
