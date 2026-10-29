@@ -191,6 +191,93 @@
       "searchable": 1
     },
     {
+      "key": "aiyifan_api",
+      "name": "🌏 爱壹帆 (海外)",
+      "type": 3,
+      "api": "https://zoe.im/tvbox/sites/aiyifan/spider.js?v=f5a26a1a&t=1793272185701",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "categories": [
+        "电影",
+        "剧集",
+        "综艺",
+        "动漫",
+        "短剧",
+        "纪录片"
+      ]
+    },
+    {
+      "key": "bfzy",
+      "name": "🔥 暴风",
+      "type": 1,
+      "api": "https://bfzyapi.com/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "ddys",
+      "name": "🎞 低端影视",
+      "type": 3,
+      "api": "https://zoe.im/tvbox/sites/ddys/spider.js?v=6e848abf&t=1793272185702",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "categories": [
+        "电影",
+        "剧集",
+        "动漫",
+        "综艺",
+        "纪录片"
+      ]
+    },
+    {
+      "key": "ffzy",
+      "name": "⚡ 非凡资源",
+      "type": 1,
+      "api": "https://cj.ffzyapi.com/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "haohua",
+      "name": "🦁 豪华",
+      "type": 1,
+      "api": "https://www.haohuazy.com/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "hongniu",
+      "name": "🐂 红牛",
+      "type": 1,
+      "api": "https://www.hongniuzy3.com/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "liangzi",
+      "name": "🔬 量子",
+      "type": 1,
+      "api": "https://cj.lziapi.com/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "yinghua",
+      "name": "🌸 樱花",
+      "type": 1,
+      "api": "https://api.apiyhzy.com/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
       "key": "Gitcafe",
       "name": "📀小纸条(搜索)",
       "type": 3,
@@ -681,93 +768,6 @@
       "api": "https://ikunzyapi.com/api.php/provide/vod/at/xml/",
       "searchable": 1,
       "quickSearch": 1
-    },
-    {
-      "key": "aiyifan_api",
-      "name": "🌏 爱壹帆 (海外)",
-      "type": 3,
-      "api": "https://zoe.im/tvbox/sites/aiyifan/spider.js?v=f5a26a1a&t=1793272185701",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "categories": [
-        "电影",
-        "剧集",
-        "综艺",
-        "动漫",
-        "短剧",
-        "纪录片"
-      ]
-    },
-    {
-      "key": "bfzy",
-      "name": "🔥 暴风",
-      "type": 1,
-      "api": "https://bfzyapi.com/api.php/provide/vod",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },
-    {
-      "key": "ddys",
-      "name": "🎞 低端影视",
-      "type": 3,
-      "api": "https://zoe.im/tvbox/sites/ddys/spider.js?v=6e848abf&t=1793272185702",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "categories": [
-        "电影",
-        "剧集",
-        "动漫",
-        "综艺",
-        "纪录片"
-      ]
-    },
-    {
-      "key": "ffzy",
-      "name": "⚡ 非凡资源",
-      "type": 1,
-      "api": "https://cj.ffzyapi.com/api.php/provide/vod",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },
-    {
-      "key": "haohua",
-      "name": "🦁 豪华",
-      "type": 1,
-      "api": "https://www.haohuazy.com/api.php/provide/vod",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },
-    {
-      "key": "hongniu",
-      "name": "🐂 红牛",
-      "type": 1,
-      "api": "https://www.hongniuzy3.com/api.php/provide/vod",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },
-    {
-      "key": "liangzi",
-      "name": "🔬 量子",
-      "type": 1,
-      "api": "https://cj.lziapi.com/api.php/provide/vod",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },
-    {
-      "key": "yinghua",
-      "name": "🌸 樱花",
-      "type": 1,
-      "api": "https://api.apiyhzy.com/api.php/provide/vod",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
     }
   ],
   "lives": [
@@ -1285,6 +1285,16 @@
       }
     },
     {
+      "name": "Json并发",
+      "type": 2,
+      "url": "Parallel"
+    },
+    {
+      "name": "Json轮询",
+      "type": 2,
+      "url": "Sequence"
+    },
+    {
       "name": "-咸鱼-",
       "type": 0,
       "url": "https://jx.xyflv.cc/?url=",
@@ -1447,19 +1457,9 @@
       "name": "线路10",
       "type": 0,
       "url": "https://www.ckplayer.vip/jiexi/?url="
-    },
-    {
-      "name": "Json并发",
-      "type": 2,
-      "url": "Parallel"
-    },
-    {
-      "name": "Json轮询",
-      "type": 2,
-      "url": "Sequence"
     }
   ],
-  "last_updated": "2026-10-29T12:27:40.287815+00:00",
+  "last_updated": "2026-10-29T22:31:32.024687+00:00",
   "upstream_count": 4,
   "source_count": 144
 }
